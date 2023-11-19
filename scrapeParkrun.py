@@ -1,26 +1,15 @@
-'''
-Access individuals results page on Parkrun website, locate the relevent element (3rd table on page) which lists
-runners results. Load this to Pandas dataframe for
-'''
+
+#wrap this as a function to run from main
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-#
-'''
-import time
-from getpass import getpass
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.service import Service
-'''
+
 
 #Placeholder runner number, will be added in main when
-runner = str(1)
+runner = str(input("Enter ParkRun number"))
 # Constants
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
 
